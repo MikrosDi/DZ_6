@@ -28,14 +28,7 @@ void Free(int** M, size_t n)
 	}
 	delete[] M;
 }
-void Input(int** M, size_t n, size_t m) {
-	for (size_t i = 0; i < n; ++i) {
-		for (size_t j = 0; j < m; ++j) {
-			cout << "M[" << i << "][" << j << "] = ";
-			cin >> M[i][j];
-		}
-	}
-}
+
 void Random(int** x1, const size_t x2, const size_t x3)
 {
 	srand((unsigned int)time(0));
@@ -89,10 +82,10 @@ int main()
 	{
 		cout << "Задание второе: " << "\n";
 		size_t n, m;
-		std::cout << "Введите количество строк матрицы: ";
-		std::cin >> n;
-		std::cout << "Введите количество столбцов матрицы: ";
-		std::cin >> m;
+		cout << "Введите количество строк матрицы: ";
+		cin >> n;
+		cout << "Введите количество столбцов матрицы: ";
+		cin >> m;
 		int** A = Create(n, m);
 		Random(A, n, m);
 		Print(A, n, m);
