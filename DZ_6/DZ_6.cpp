@@ -41,9 +41,9 @@ void Random(int** x1, const size_t x2, const size_t x3)
 void Print(int** M, size_t n, size_t m) {
 	for (size_t i = 0; i < n; ++i) {
 		for (size_t j = 0; j < m; ++j) {
-			std::cout << M[i][j] << ' ';
+			cout << M[i][j] << ' ';
 		}
-		std::cout << std::endl;
+		cout << endl;
 	}
 }
 
